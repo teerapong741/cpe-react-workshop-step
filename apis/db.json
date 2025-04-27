@@ -1,10 +1,116 @@
 {
   "products": [
-    { "id": 1, "name": "Laptop", "price": 30000, "category": "Electronics" },
-    { "id": 2, "name": "T-Shirt", "price": 500, "category": "Clothing" },
-    { "id": 3, "name": "Apple", "price": 30, "category": "Food" }
+    {
+      "id": 1,
+      "name": "Laptop",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 30000,
+      "category": "Electronics"
+    },
+    {
+      "id": 2,
+      "name": "T-Shirt",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 500,
+      "category": "Clothing"
+    },
+    {
+      "id": 3,
+      "name": "Apple",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 30,
+      "category": "Food"
+    },
+    {
+      "id": 4,
+      "name": "Laptop",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 30000,
+      "category": "Electronics"
+    },
+    {
+      "id": 5,
+      "name": "T-Shirt",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 500,
+      "category": "Clothing"
+    },
+    {
+      "id": 6,
+      "name": "Apple",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 30,
+      "category": "Food"
+    },
+    {
+      "id": 7,
+      "name": "Laptop",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 30000,
+      "category": "Electronics"
+    },
+    {
+      "id": 8,
+      "name": "T-Shirt",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 500,
+      "category": "Clothing"
+    },
+    {
+      "id": 9,
+      "name": "Apple",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 30,
+      "category": "Food"
+    },
+    {
+      "id": 10,
+      "name": "Laptop",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 30000,
+      "category": "Electronics"
+    },
+    {
+      "id": 11,
+      "name": "T-Shirt",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 500,
+      "category": "Clothing"
+    },
+    {
+      "id": 12,
+      "name": "Apple",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 30,
+      "category": "Food"
+    },
+    {
+      "id": "5044",
+      "name": "TEST1",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 100,
+      "category": "Electronics"
+    },
+    {
+      "id": "2049",
+      "name": "NEW Product 1",
+      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "price": 100,
+      "category": "Electronics"
+    },
+    {
+      "id": "e588",
+      "name": "TEST",
+      "price": 100,
+      "category": "Clothing",
+      "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg"
+    }
   ],
   "users": [
-    { "id": 1, "username": "admin", "password": "1234" }
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "1234"
+    }
   ]
 }

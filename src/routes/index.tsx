@@ -3,6 +3,8 @@ import AddProduct from '../pages/AddProduct.page';
 import Home from '../pages/Home.page';
 import Login from '../pages/Login.page';
 import Products from '../pages/Products.page';
+import ProtectedRoute from './ProtectedRoute';
+import ProductDetail from '../pages/ProductDetail';
 
 const routes: RouteObject[] = [
   {
@@ -14,8 +16,16 @@ const routes: RouteObject[] = [
     element: <Products />,
   },
   {
+    path: '/products/:id',
+    element: <ProductDetail />,
+  },
+  {
     path: '/products/add',
-    element: <AddProduct />,
+    element: (
+      <ProtectedRoute>
+        <AddProduct />
+      </ProtectedRoute>
+    ),
   },
   {
     path: '/login',
