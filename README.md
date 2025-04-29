@@ -1,54 +1,91 @@
-# React + TypeScript + Vite
+# 🛍️ CPE React Workshop 1 - Simple Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and elegant product management web application built with React, TypeScript, Vite, TailwindCSS, and Context API.  
+Designed for learning and practicing frontend best practices including routing, global state management, form handling, and API interaction.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 📦 Product Listing (with Pagination and Search)
+- 🔎 Product Detail Page
+- ➕ Add New Product
+- 🔐 Login & Authentication (with Protected Routes)
+- 🛡️ Route Guards
+- 💤 Lazy Load Pages (with React Suspense)
+- 🔥 Full Page Loading during Route Changes
+- ⚡ API interaction with mock server (json-server)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tech Stack
+
+- [React 18](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [React Router v6](https://reactrouter.com/en/main)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Context API + useReducer](https://react.dev/learn/scaling-up-with-reducer-and-context)
+- [json-server](https://github.com/typicode/json-server) (for mock API)
+
+---
+
+## 📦 Project Structure
+
+```plaintext
+src/
+|-- assets/             # Asset Files
+├── components/         # Reusable Components (e.g., Navbar, ProductCard)
+├── stores/             # Global State (ProductContext, AuthContext)
+├── core/               # Core functionalities (e.g., Guards)
+├── pages/              # Main Pages (Home, Products, AddProduct, ProductDetail, Login, NotFound)
+├── hooks/              # Custom Hooks
+├── routes/             # Routes configuration (Lazy Loading Routes)
+├── services/           # API services (ProductService)
+├── types/              # TypeScript types and interfaces
+├── App.tsx             # Main App Entry
+└── main.tsx            # Vite Entry Point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧪 Installation
+```plaintext
+# 1. Clone this repository
+git clone https://github.com/your-username/cpe-react-workshop-1.git
+cd cpe-react-workshop-1
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+# 2. Install dependencies
+npm install
+npm install-server
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+# 3. Start the development server
+npm run dev
+npm run server
 ```
+
+## 🔥 Usage
+•	Go to http://localhost:5173
+•	Login using:
+  •	Username: admin
+  •	Password: 1234
+•	Explore the features like:
+  •	View Products
+  •	Add New Product
+  •	View Product Detail
+  •	Protected Routes (Add Product only after login)
+
+
+## 📖 Learning Objectives
+•	Understand how to setup React + TypeScript project with Vite
+•	Master React Router v6 for multi-page routing
+•	Apply useState, useEffect, useReducer, useContext for real-world problems
+•	Design clean and maintainable project structure
+•	Optimize performance using React Lazy and Suspense
+•	Build beautiful UI fast with TailwindCSS
+
+## 🙌 Acknowledgments
+This workshop is designed for educational purposes to help Computer Engineering students practice React + TypeScript development.
+
+
+## 🧙‍♂️ Author
+•	Instructor: Nat Tanchotchuang
+  •	Workshop: CPE React Workshop Step

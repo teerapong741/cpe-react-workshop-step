@@ -4,6 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "install-server": "npm install -g json-server",
+    "server": "json-server --watch ./apis/db.json --port 3001",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
