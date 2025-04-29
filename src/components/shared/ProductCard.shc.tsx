@@ -1,6 +1,10 @@
-import { Product } from "../../types/Product";
+import { ProductModel } from "../../types/Product.model";
 
-type ProductCardProps = { product: Product, textBtn: string; onClick?: () => void };
+type ProductCardProps = { 
+  product: ProductModel, 
+  textBtn: string; 
+  onClick?: () => void 
+};
 
 function ProductCard({ product, textBtn, onClick }: ProductCardProps) {
   return (

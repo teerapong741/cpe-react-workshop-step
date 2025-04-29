@@ -1,16 +1,16 @@
 import { useParams, useNavigate } from 'react-router-dom';
-import { useProductContext } from './../context/ProductContext';
 import { useEffect, useState } from 'react';
-import { ProductService } from './../services/ProductService';
-import { Product } from './../types/Product';
+import { ProductService } from '../services/product.service';
+import { ProductModel } from '../types/Product.model';
 import ProductCard from '../components/shared/ProductCard.shc';
+import { useProductContext } from '../hooks/UseProductContact.hook';
 
-function ProductDetail() {
+function ProductDetailPage() {
   const { id } = useParams<{ id: string }>();
   const { products } = useProductContext();
   const navigate = useNavigate();
 
-  const [product, setProduct] = useState<Product | null>(null);
+  const [product, setProduct] = useState<ProductModel | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -27,7 +27,7 @@ function ProductDetail() {
       }
 
       try {
-        const response = await ProductService.fetchProductById(Number(id));
+        const response = await ProductService.getProductById(Number(id));
         setProduct(response);
       } catch (err: any) {
         setError(err.message || 'Product not found');
@@ -54,4 +54,4 @@ function ProductDetail() {
   );
 }
 
-export default ProductDetail;
+export default ProductDetailPage;

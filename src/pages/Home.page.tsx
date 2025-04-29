@@ -1,4 +1,4 @@
-function Home() {
+function HomePage() {
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 text-white px-6 py-12">
       <div className="text-center max-w-3xl space-y-8 animate-fade-in-up">
@@ -22,4 +22,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomePage;

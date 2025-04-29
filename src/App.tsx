@@ -1,24 +1,29 @@
 import { BrowserRouter, useRoutes } from 'react-router-dom';
 import routes from './routes';
-import { ProductProvider } from './context/ProductContext';
+import { ProductStoreProvider } from './stores/product.store';
 import Navbar from './components/shared/Navbar.shc';
-import { AuthProvider } from './context/AuthContext';
+import { AuthStoreProvider } from './stores/auth.store';
 import { Suspense } from 'react';
+import FullPageLoader from './pages/Loading.page';
 
 function AppRoutes() {
   const element = useRoutes(routes);
-  return <Suspense fallback={<p>Loading Page...</p>}>{element}</Suspense>;
+  return (
+    <Suspense fallback={<FullPageLoader />}>
+      {element}
+    </Suspense>
+  );
 }
 
 function App() {
   return (
     <BrowserRouter>
-      <AuthProvider>
-        <ProductProvider>
+      <AuthStoreProvider>
+        <ProductStoreProvider>
           <Navbar />
           <AppRoutes />
-        </ProductProvider>
-      </AuthProvider>
+        </ProductStoreProvider>
+      </AuthStoreProvider>
     </BrowserRouter>
   );
 }

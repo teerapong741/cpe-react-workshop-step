@@ -2,115 +2,59 @@
   "products": [
     {
       "id": 1,
-      "name": "Laptop",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "name": "Macbook",
+      "image": "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/macbook-air-og-202503?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1739216814915",
       "price": 30000,
       "category": "Electronics"
     },
     {
       "id": 2,
       "name": "T-Shirt",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcpAlDkMp9W0qVi4XZ9t15pPhO1DPvE5iaJ8qIE4dMP8Fe-YKjQM20SF1MLroMPjQro8s&usqp=CAU",
       "price": 500,
       "category": "Clothing"
     },
     {
       "id": 3,
       "name": "Apple",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "image": "https://4.imimg.com/data4/BH/GH/MY-23225626/fresh-apple-500x500.jpg",
       "price": 30,
       "category": "Food"
     },
     {
       "id": 4,
       "name": "Laptop",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "image": "https://s.alicdn.com/@sc04/kf/H436edeccbba74d019a1cd6088c0ad88bG.png_300x300.jpg",
       "price": 30000,
       "category": "Electronics"
     },
     {
       "id": 5,
-      "name": "T-Shirt",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "name": "Toy",
+      "image": "https://i5.walmartimages.com/seo/Disney-Pixar-Toy-Story-Buzz-Lightyear-Talking-Action-Figure_11123c59-f8b1-4483-bb77-c31a7b2a9b75_1.dd0c2d86b361071a7a810bd23af41f22.jpeg",
       "price": 500,
       "category": "Clothing"
     },
     {
       "id": 6,
-      "name": "Apple",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "price": 30,
+      "name": "Lego",
+      "image": "https://www.toysrus.co.th/dw/image/v2/BDGJ_PRD/on/demandware.static/-/Sites-master-catalog-toysrus/default/dw281b7c36/f/8/4/d/f84d823a1049f30f061407afb6f5ec69ca96b5ea_39497_i1.jpg?sw=500&sh=500&q=75",
+      "price": 1250,
       "category": "Food"
     },
     {
-      "id": 7,
-      "name": "Laptop",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "price": 30000,
-      "category": "Electronics"
+      "id": "3631",
+      "name": "TSET_P",
+      "price": 103,
+      "category": "Food",
+      "image": "https://img.freepik.com/free-photo/top-view-table-full-food_23-2149209253.jpg"
     },
     {
-      "id": 8,
-      "name": "T-Shirt",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "price": 500,
-      "category": "Clothing"
-    },
-    {
-      "id": 9,
-      "name": "Apple",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "price": 30,
-      "category": "Food"
-    },
-    {
-      "id": 10,
-      "name": "Laptop",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "price": 30000,
-      "category": "Electronics"
-    },
-    {
-      "id": 11,
-      "name": "T-Shirt",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "price": 500,
-      "category": "Clothing"
-    },
-    {
-      "id": 12,
-      "name": "Apple",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "price": 30,
-      "category": "Food"
-    },
-    {
-      "id": "5044",
-      "name": "TEST1",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
+      "id": "a733",
+      "name": "TEST 3",
       "price": 100,
-      "category": "Electronics"
-    },
-    {
-      "id": "2049",
-      "name": "NEW Product 1",
-      "image": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZHVjdHxlbnwwfHwwfHx8MA%3D%3D",
-      "price": 100,
-      "category": "Electronics"
-    },
-    {
-      "id": "e588",
-      "name": "TEST",
-      "price": 100,
-      "category": "Clothing",
-      "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-madebymath-90946.jpg&fm=jpg"
-    }
-  ],
-  "users": [
-    {
-      "id": 1,
-      "username": "admin",
-      "password": "1234"
+      "category": "Electronics",
+      "image": "123"
     }
   ]
 }

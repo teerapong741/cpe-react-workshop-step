@@ -1,23 +1,23 @@
 import { useEffect, useState, useMemo, useCallback } from 'react';
-import { useProductContext } from './../context/ProductContext';
-import { ProductService } from './../services/ProductService';
+import { ProductService } from '../services/product.service';
 import { Link, Outlet } from 'react-router-dom';
 import ProductCard from '../components/shared/ProductCard.shc';
+import { useProductContext } from '../hooks/UseProductContact.hook';
 
-function Products() {
+function ProductListPage() {
   const { products, dispatch } = useProductContext();
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [searchText, setSearchText] = useState('');
   const [currentPage, setCurrentPage] = useState(1);
 
-  const itemsPerPage = 4;
+  const itemsPerPage = 6;
 
   const loadProducts = useCallback(async () => {
     try {
       setLoading(true);
       setError(null);
-      const result = await ProductService.fetchProducts();
+      const result = await ProductService.getProductList();
       dispatch({ type: 'SET_PRODUCTS', payload: result });
     } catch (err: any) {
       setError(err.message || 'Something went wrong');
@@ -119,4 +119,4 @@ function Products() {
   );
 }
 
-export default Products;
+export default ProductListPage;

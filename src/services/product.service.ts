@@ -1,10 +1,10 @@
-import { Product } from '../types/Product';
+import { ProductModel } from '../types/Product.model';
 
 const API_URL = 'http://localhost:3001/products';
 
 // จำลองการดึงข้อมูล (Mock API)
 export const ProductService = {
-  fetchProducts: async (): Promise<Product[]> => {
+  getProductList: async (): Promise<ProductModel[]> => {
     const response = await fetch(API_URL);
     if (!response.ok) {
       throw new Error('Failed to fetch products');
@@ -12,7 +12,7 @@ export const ProductService = {
     return await response.json();
   },
 
-  fetchProductById: async (id: number): Promise<Product> => {
+  getProductById: async (id: number): Promise<ProductModel> => {
     const response = await fetch(`${API_URL}/${id}`);
     if (!response.ok) {
       throw new Error('Failed to fetch product');
@@ -20,7 +20,7 @@ export const ProductService = {
     return await response.json();
   },
 
-  addProduct: async (product: Omit<Product, 'id'>): Promise<Product> => {
+  addProduct: async (product: Omit<ProductModel, 'id'>): Promise<ProductModel> => {
     const response = await fetch(API_URL, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },

@@ -1,39 +1,42 @@
 import { RouteObject } from 'react-router-dom';
-import AddProduct from '../pages/AddProduct.page';
-import Home from '../pages/Home.page';
-import Login from '../pages/Login.page';
-import Products from '../pages/Products.page';
-import ProtectedRoute from './ProtectedRoute';
-import ProductDetail from '../pages/ProductDetail';
+import React from 'react';
+import ProtectedRoute from '../core/guards/ProtectedRoute';
+
+const HomePage = React.lazy(() => import('../pages/Home.page'));
+const ProductListPage = React.lazy(() => import('../pages/ProductList.page'));
+const ProductDetailPage = React.lazy(() => import('../pages/ProductDetail.page'));
+const AddProductPage = React.lazy(() => import('../pages/AddProduct.page'));
+const LoginPage = React.lazy(() => import('../pages/Login.page'));
+const NotFoundPage = React.lazy(() => import('../pages/NotFound404.page'));
 
 const routes: RouteObject[] = [
   {
     path: '/',
-    element: <Home />,
+    element: <HomePage />,
   },
   {
     path: '/products',
-    element: <Products />,
+    element: <ProductListPage />,
   },
   {
     path: '/products/:id',
-    element: <ProductDetail />,
+    element: <ProductDetailPage />,
   },
   {
     path: '/products/add',
     element: (
       <ProtectedRoute>
-        <AddProduct />
+        <AddProductPage />
       </ProtectedRoute>
     ),
   },
   {
     path: '/login',
-    element: <Login />,
+    element: <LoginPage />,
   },
   {
     path: '*',
-    element: <h1>404 Not Found</h1>,
+    element: <NotFoundPage />,
   },
 ];
 

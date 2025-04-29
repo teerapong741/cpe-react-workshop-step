@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { ProductService } from './../services/ProductService';
-import { useProductContext } from './../context/ProductContext';
+import { ProductService } from '../services/product.service';
 import { useNavigate } from 'react-router-dom';
+import { useProductContext } from '../hooks/UseProductContact.hook';
 
 const categories = ['Electronics', 'Clothing', 'Food'];
 
-function AddProduct() {
+function AddProductPage() {
   const { dispatch } = useProductContext();
   const navigate = useNavigate();
 
@@ -124,4 +124,4 @@ function AddProduct() {
   );
 }
 
-export default AddProduct;
+export default AddProductPage;
